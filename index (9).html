@@ -1,0 +1,38 @@
+<html>
+        <body><!DOCTYPE html>
+<html>
+    <head>
+   <title>Account Registration</title>
+    </head>
+    <body>
+<marquee><h1>Account Registration</h1></marquee>
+        <form onsubmit="checkPassword()"><br><br>
+         First Name:<input type="text"><br><br>
+         Last Name:<input type="text"><br><br>
+         Email Address:<input type="email"><br><br>
+         Username:<input type="text"><br><br>
+        Password:<input type="password" required><br><br>
+        Confirm Password:<input type="password" required><br><br>
+        <input type="submit" value="Check Password">
+        </form>
+
+    </body>
+</html></body>
+        <style>body{
+    font-family:'Courier New', Courier, monospace;
+    background-color:cornsilk;
+}
+h1{
+    color:cadetblue;
+}</style>
+        <script>function checkPassword(){
+    var a=document.getElementsByTagName("input")[0].value;
+    var b= document.getElementsByTagName("input")[1].value;
+    if(a!=b){
+ alert("Passwords are not the same.")
+    }
+    else{
+alert("Registration is a success!")
+    }
+}</script>
+      </html>
